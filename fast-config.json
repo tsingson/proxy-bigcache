@@ -1,0 +1,40 @@
+{
+  "Name": "Aaa Server",
+  "Version": "0.1.2",
+  "Debug": true,
+  "UmsConfig": {
+    "ActiveAuthUri": "http://50.7.101.250/rpc/active",
+    "RegisterAuthUri": "http://50.7.101.250/rpc/auth",
+    "PlayAuthUri": "http://127.0.0.1"
+  },
+  "AaaConfig": {
+    "ServerPort": ":8095",
+    "LogFilenamePrefix": "aaa-log"
+  },
+  "CdnConfig": {
+    "VodGslb": ["66.90.93.130:45000"],
+    "LiveGslb": ["23.237.64.186:43000"]
+  },
+  "EpgConfig": [
+    {
+      "ApkName": "华语直播",
+      "ApkType": "com.cts.live",
+      "ApkEpgURI": ["50.7.118.186"]
+    },
+    {
+      "ApkName": "缤纷视界",
+      "ApkType": "com.smalls.newvideotwo",
+      "ApkEpgURI": ["50.7.118.186"]
+    },
+    {
+      "ApkName": "粤精彩",
+      "ApkType": "com.smalls.wonderfulyueplus",
+      "ApkEpgURI": ["23.237.56.42"]
+    },
+    {
+      "ApkName": "动感世界",
+      "ApkType": "com.smalls.sports",
+      "ApkEpgURI": ["23.237.56.42"]
+    }
+  ]
+}
